@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack() {
+            ForEach(0..<4) { index in
+                CardView()
+            }
+        }
     }
 }
 

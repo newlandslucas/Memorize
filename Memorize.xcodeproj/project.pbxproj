@@ -13,6 +13,7 @@
 		A40F296828470DC00015BB4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40F295628470DBC0015BB4C /* ContentView.swift */; };
 		A40F296928470DC00015BB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40F295728470DC00015BB4C /* Assets.xcassets */; };
 		A40F296A28470DC00015BB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40F295728470DC00015BB4C /* Assets.xcassets */; };
+		A40F2976284711F50015BB4C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40F2975284711F50015BB4C /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A40F295C28470DC00015BB4C /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40F296228470DC00015BB4C /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40F296428470DC00015BB4C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A40F2975284711F50015BB4C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,8 @@
 		A40F294F28470DBB0015BB4C = {
 			isa = PBXGroup;
 			children = (
+				A40F2974284711E70015BB4C /* Components */,
+				A40F2973284711E00015BB4C /* App */,
 				A40F295428470DBB0015BB4C /* Shared */,
 				A40F296328470DC00015BB4C /* macOS */,
 				A40F295D28470DC00015BB4C /* Products */,
@@ -55,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				A40F295528470DBC0015BB4C /* MemorizeApp.swift */,
-				A40F295628470DBC0015BB4C /* ContentView.swift */,
 				A40F295728470DC00015BB4C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +79,22 @@
 				A40F296428470DC00015BB4C /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		A40F2973284711E00015BB4C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A40F295628470DBC0015BB4C /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40F2974284711E70015BB4C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A40F2975284711F50015BB4C /* CardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A40F296728470DC00015BB4C /* ContentView.swift in Sources */,
+				A40F2976284711F50015BB4C /* CardView.swift in Sources */,
 				A40F296528470DC00015BB4C /* MemorizeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
