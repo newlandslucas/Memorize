@@ -14,6 +14,9 @@ struct ContentView: View {
                 CardView()
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("ColorDark"))
+        
     }
 }
 

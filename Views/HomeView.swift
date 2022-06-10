@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var isAnimating: Bool = false
+    @State private var imageOffset: CGSize = .zero
+    @State private var indicatorOpacity: Double = 1.0
+    
     var body: some View {
-        VStack(spacing: 100) {
+        VStack(spacing: 50) {
             
             Spacer()
             
@@ -19,7 +23,22 @@ struct HomeView: View {
                 .fontWeight(.semibold)
                 .italic()
             
-//            Spacer()
+            Spacer()
+            
+            ZStack {
+                CircleGroupView(ShapeColor: .gray, ShapeOpacity: 0.1)
+                Text("🎃")
+                    .font(.system(size: 100, weight: .semibold, design: .serif))
+                    .scaledToFit()
+                    .padding()
+                    .animation(Animation.easeOut(duration: 4).repeatForever(), value: isAnimating)
+            }
+            
+           
+            
+            
+            
+         Spacer()
             
             Button {
                 print("Clicou")
@@ -28,8 +47,6 @@ struct HomeView: View {
                 PrimaryButton(image: "play", showImage: true, text: "Jogar")
             }
 
-            
-            Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("ColorDark"))

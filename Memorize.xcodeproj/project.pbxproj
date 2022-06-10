@@ -18,9 +18,11 @@
 		A4129F2F2847C68300CBAF7E /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4129F2E2847C68300CBAF7E /* EmojiMemoryGame.swift */; };
 		A462AC682851802E0050F4F0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462AC672851802E0050F4F0 /* HomeView.swift */; };
 		A482C5372852A15100098531 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482C5362852A15100098531 /* PrimaryButton.swift */; };
+		A482C5392852AAA200098531 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A482C5382852AAA200098531 /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A402B22428536DEF003EBBF1 /* Memorize--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Memorize--iOS--Info.plist"; sourceTree = "<group>"; };
 		A40F295528470DBC0015BB4C /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		A40F295628470DBC0015BB4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A40F295728470DC00015BB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +34,7 @@
 		A4129F2E2847C68300CBAF7E /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		A462AC672851802E0050F4F0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A482C5362852A15100098531 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		A482C5382852AAA200098531 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 		A40F294F28470DBB0015BB4C = {
 			isa = PBXGroup;
 			children = (
+				A402B22428536DEF003EBBF1 /* Memorize--iOS--Info.plist */,
 				A462AC66285180170050F4F0 /* Views */,
 				A4129F2B2847C47100CBAF7E /* Models */,
 				A40F2974284711E70015BB4C /* Components */,
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A462AC672851802E0050F4F0 /* HomeView.swift */,
+				A482C5382852AAA200098531 /* CircleGroupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			files = (
 				A40F296728470DC00015BB4C /* ContentView.swift in Sources */,
 				A40F2976284711F50015BB4C /* CardView.swift in Sources */,
+				A482C5392852AAA200098531 /* CircleGroupView.swift in Sources */,
 				A4129F2D2847C4AA00CBAF7E /* MemoryGame.swift in Sources */,
 				A462AC682851802E0050F4F0 /* HomeView.swift in Sources */,
 				A482C5372852A15100098531 /* PrimaryButton.swift in Sources */,
@@ -363,9 +369,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Memorize--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -392,9 +401,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Memorize--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;

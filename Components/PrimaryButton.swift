@@ -19,12 +19,12 @@ struct PrimaryButton: View {
             }
             
             Text(text)
-                .fontWeight(.semibold)
+                .fontWeight(.bold)
                 .font(.headline)
         }
         .padding()
-        .padding(.horizontal, 45)
-        .background(.white)
+        .padding(.horizontal, 90)
+        .background(.orange)
         .cornerRadius(30)
         .shadow(radius: 10)
     }

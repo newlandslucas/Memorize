@@ -8,5 +8,16 @@
 import SwiftUI
 
 //class EmojiMemoryGame {
-//    private(set) var model: MemoryGame<String>
+//    private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards: 2)
+//    
+//    //MARK: - Acess to the model
+//    
+//    var cards: Array<MemoryGame<String>.Card> {
+//        return model.cards
+//    }
+//        //MARK: - Intents
+//    
+//    func choose(card: MemoryGame<String>.Card) {
+//        
+//    }
 //}
