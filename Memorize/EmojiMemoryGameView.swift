@@ -12,12 +12,13 @@ struct EmojiMemoryGameView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(spacing: 190) {
                 Button(action: {
                     withAnimation(.easeInOut) {
                         self.viewModel.resetGame()
                     }
                 }, label: { Text("New Game") })
+                
                 Text("Flips: 0")
             }.padding(.top)
             Grid(viewModel.cards) { card in
