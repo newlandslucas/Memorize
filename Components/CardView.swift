@@ -10,25 +10,30 @@ import SwiftUI
 
 struct CardView: View {
     
-    @State var isFaceUp: Bool = false
+    var card: MemoryGame<String>.Card
+    
+    @State var isFaceUp: Bool = true
     var body: some View {
         ZStack {
             
-            if isFaceUp {
+            if card.isFaceUp {
                 RoundedRectangle(cornerRadius: 10.0)
                               .fill(Color.white)
+                              .frame(width: 100, height: 150)
                           RoundedRectangle(cornerRadius: 10.0)
                               .stroke(lineWidth: 3)
               
               
-                          Text("👻")
+                Text(card.content)
             } else {
                 RoundedRectangle(cornerRadius: 10)
                     .fill()
+                    .frame(width: 100, height: 150)
             }
         }
         .padding(.horizontal, 10)
         .foregroundColor(Color.orange)
         .font(Font.largeTitle)
+        .frame(width: 100, height: 150)
     }
 }

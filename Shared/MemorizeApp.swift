@@ -11,8 +11,8 @@ import SwiftUI
 struct MemorizeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .preferredColorScheme(.dark)
+            ContentView(viewModel: EmojiMemoryGame())
+//                .preferredColorScheme(.dark)
         }
         
     }
